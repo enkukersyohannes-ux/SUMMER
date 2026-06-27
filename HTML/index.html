@@ -1,0 +1,190 @@
+<!-- shortcut = shift+1+tab 
+ lorem = for long text -->>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My first website</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="learnning HTML">
+        <meta name="keywords" content="HTML, learn">
+        <meta name="author" content="SUMMER">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta http-equiv="refresh" content="60">
+    </head>
+    <body style="background-color: rgb(46, 111, 20)">
+        <!-- this is a comment -->
+        <h1>welcome to my website</h1>
+        <hr>
+        <h2>about me</h2>
+        <br>
+        <h3>my interests</h3>
+        <br>
+        <p>this is <small>my</small> <mark>first website</mark> <sub>and(subscript)</sub> I <sup>am(superscript)</sup> learning <ins>HTML(inserted)</ins></p>
+        <p><del>I am </del> <i>interested</i> in <b>programing</b> and <big>web</big> development</p>
+
+        <a href="https://www.google.com"target=_self title="this take you to google">Google</a>
+        <br>
+        <a href="page1.html"target=_self title="this take you to page 1">Page 1</a>
+        <br>
+            <img src="Images/image1.jpg" height="200" width="200" alt="this is an first image"title="this is an first image">
+            <audio controls autoplay muted loop src="Audio/audio1.mp3"></audio>
+            <video controls autoplay loop src="Video/video1.mp4" width="500"></video>
+            <video controls autoplay loop width="500">
+                <source src="video2.webM">
+                <source src="video3.mp4">
+                this browser does not support HTML5 video
+            </video>
+
+            <h4>unorderd list</h4>
+            <ul>
+                <li>pizza</li>
+                <li>tomato</li>
+                <li>cheese
+                    <ul>
+                        <li>milk</li>
+                        <li>meat</li>
+
+                    </ul>
+                </li>
+            </ul>
+            <h4>ordered list</h4>
+            <ol type="a">
+                <li>eat</li>
+                <li>shower</li>
+                <li>work</li>
+            </ol>
+            <h4>discription list</h4>
+            <dl>
+                <dt>HTML</dt>
+                <dd>this add structure to a webpage</dd>
+                <dt>CSS</dt>
+                <dd>this add style to a webpage</dd>
+            </dl>
+
+            <h3>store hours</h3>
+            <table bgcolor="black" width="700">
+                <tr bgcolor="blue">
+                    <th width="100">sunday</th>
+                    <th width="100">monday</th>
+                    <th width="100">tuesday</th>
+                    <th width="100">wednesday</th>
+                    <th width="100">thursday</th>
+                    <th width="100">friday</th>
+                    <th width="100">saturday</th>
+                </tr>
+                <tr bgcolor="lightblue" align="center">
+                    <td>closed</td> 
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>closed</td>
+                </tr>
+            </table>
+
+            <h1 style="color: blue;">Hello</h1>
+            <h1 style="color: #24bf34">Hello</h1>
+            <h1 style="color: rgb(191, 36, 91)">Hello</h1>
+
+            <p style="background-color: rgb(42, 129, 183);">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore ad nobis consequatur accusantium voluptas molestias, vero, corporis totam aspernatur veniam sed, molestiae impedit nam praesentium nemo esse quod quisquam quibusdam.</p>
+
+            <!-- span = markup to text or portion of document and div = define a division of a document -->
+
+            <h1>hello</h1>
+            <div style="background-color: rgb(92, 145, 56);">
+            <p><span style="color: red">sLorem ipsum dolor sit, amet consectetur adipisicing elit.</span> Excepturi quo aspernatur nam deserunt exercitationem error obcaecati placeat sed vitae ipsum. Eveniet eos possimus hic quaerat eius itaque commodi, maiores a?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quo aspernatur nam deserunt exercitationem error obcaecati placeat sed vitae ipsum. Eveniet eos possimus hic quaerat eius itaque commodi, maiores a?</p>
+            </div>
+            <p style="background-color: rgb(92, 145, 56);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quo aspernatur nam deserunt exercitationem error obcaecati placeat sed vitae ipsum. Eveniet eos possimus hic quaerat eius itaque commodi, maiores a?</p>
+
+        <!-- i frame = embed content from another source into an HTML documenr eg. used for used in many hacking techniques -->
+
+            <iframe src="https://www.bing.com" width="750" height="250" frameborder="0"></iframe>
+            <br>
+            <iframe style="border:0" src="ads.html" frameborder="0"></iframe>
+<br>
+<br>
+            <a href="https://www.google.com">
+            <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer;">Click me</button>
+            </a>
+<br>
+            <button disabled>Click me</button>
+<br>
+<!-- onclick = event occurs when user clicks on an element(is javaScript)-->
+            <button onclick="doSomething()"style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; cursor: pointer;">Click me</button>
+
+            <p id="test">Hello</p>
+            <script>
+                function doSomething() {
+                    document.getElementById("test").innerHTML = "goodbye!";
+                }
+                </script>
+
+<br>
+            <form action="action_page.php" method="post">
+                <div>
+                <label for="fname">first name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Enkukers" required>
+                </div>
+                <br>
+                <div>
+                <label for="pass">password:</label>
+                <input type="password" id="pass" name="pass" maxlength="12" required>
+                </div>
+                <br>
+                <div>
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="enku@gmail.com" required>
+                </div>
+                <br>
+                <div>
+                <label for="phone">phone #:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0912345678" required>
+                </div>
+                <br>
+                <div>
+                <label for="bdate">birthdate:</label>
+                <input type="date" id="bdate" name="bdate" required>
+                </div>
+                <br>
+                <div>
+                <label for="quantity">quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+                <div>
+                    <label for="title">title:</label>
+                    <label for="Mr.">Mr.</label>
+                    <input type="radio" id="Mr." name="title" value="Mr.">
+
+                    <label for="Mrs.">Mrs.</label>
+                    <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                    <label for="phD.">PhD.</label>
+                    <input type="radio" id="phD." name="title" value="phD.">
+                </div>
+                <br>
+                <div>
+                    <label for="payment">payment:</label>
+                    <select id="payment" name="payment">
+                        <option value="visacard">visacard</option>
+                        <option value="mastercard">matercard</option>
+                        <option value="giftcard">giftcard</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="subscribe">subscribe:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                <br>
+                <br>
+                <div>
+                    <input type="reset">
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </body>
+</html>
