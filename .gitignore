@@ -1,0 +1,22 @@
+# VS Code extensions
+.vscode/extensions/
+
+# System folders
+AppData/
+3D Objects/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
+*.exe
+*.o
+*.bin
+
+# IDE
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
